@@ -46,44 +46,44 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Lower
    * ,----------------------------------------------------------------------------------------------------------------------.
-   * |      |Static|Breath|Rainbw| Swirl| Snake|Toggle|                    |BL_TOG|      |      |      |      |      |      |
+   * |      |Static|Breath|Rainbw| Swirl| Snake|  {   |                    |  }   |      |      |      |      |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
    * |      |Knight| X'mas| Grdnt| Test |      |Forwrd|                    |BL_INC| Home | PgDn | PgUp | End  |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
    * | Caps | Hue+ | SAT+ | VAL+ |      |      |Revers|                    |BL_DEC|  ←   |   ↓  |  ↑   |   →  |      |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * |      | Hue- | SAT- | VAL- |      |      | Space|                    | Enter|      |      |      |      |      |      |
+   * |      | Hue- | SAT- | VAL- |      |      |Toggle|                    |BL_TOG|      |      |      |      |      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |||||||| Lower| Space|      ||||||||      | Enter| Raise|||||||| HOME | PaDn | PgUp | END  |
+   * |      |      |      |      |||||||| Lower|Toggle|      ||||||||      |BL_TOG| Raise|||||||| HOME | PaDn | PgUp | END  |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_LOWER] = LAYOUT(
-    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_TOG,                         BL_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, KC_LCBR,                         KC_RCBR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
     KC_TRNS, RGB_M_K, RGB_M_X, RGB_M_G, RGB_M_T,  KC_TRNS,  RGB_MOD,                         BL_INC,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_TRNS, KC_TRNS, \
     KC_CAPS, RGB_HUI, RGB_SAI, RGB_VAI, KC_TRNS,  KC_TRNS,  RGB_RMOD,                        BL_DEC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, \
-    KC_TRNS, RGB_HUD, RGB_SAD, RGB_VAD, KC_TRNS,  KC_TRNS,  KC_SPC,                          KC_ENT,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, KC_SPC,  _______,        _______,KC_ENT,  RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
+    KC_TRNS, RGB_HUD, RGB_SAD, RGB_VAD, KC_TRNS,  KC_TRNS,  RGB_TOG,                         BL_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, RGB_TOG,_______,        _______, BL_TOGG, RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
   ),
 
   /* Raise
    * ,----------------------------------------------------------------------------------------------------------------------.
-   * |      |Static|Breath|Rainbw| Swirl| Snake|Toggle|                    |BL_TOG|      |      |      |      |      |      |
+   * |      |Static|Breath|Rainbw| Swirl| Snake|  {   |                    |  }   |      |      |      |      |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
    * |      |Knight| X'mas| Grdnt| Test |      |Forwrd|                    |BL_INC| Home | PgDn | PgUp | End  |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
    * | Caps | Hue+ | SAT+ | VAL+ |      |      |Revers|                    |BL_DEC|  ←   |   ↓  |  ↑   |   →  |      |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * |      | Hue- | SAT- | VAL- |      |      | Space|                    | Enter|      |      |      |      |      |      |
+   * |      | Hue- | SAT- | VAL- |      |      |Toggle|                    |BL_TOG|      |      |      |      |      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |||||||| Lower| Space|      ||||||||      | Enter| Raise|||||||| HOME | PaDn | PgUp | END  |
+   * |      |      |      |      |||||||| Lower|Toggle|      ||||||||      |BL_TOG| Raise|||||||| HOME | PaDn | PgUp | END  |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_RAISE] = LAYOUT(
-    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_TOG,                         BL_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, KC_LCBR,                         KC_RCBR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
     KC_TRNS, RGB_M_K, RGB_M_X, RGB_M_G, RGB_M_T,  KC_TRNS,  RGB_MOD,                         BL_INC,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_TRNS, KC_TRNS, \
     KC_CAPS, RGB_HUI, RGB_SAI, RGB_VAI, KC_TRNS,  KC_TRNS,  RGB_RMOD,                        BL_DEC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, \
-    KC_TRNS, RGB_HUD, RGB_SAD, RGB_VAD, KC_TRNS,  KC_TRNS,  KC_SPC,                          KC_ENT,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, KC_SPC,  _______,        _______,KC_ENT,  RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
+    KC_TRNS, RGB_HUD, RGB_SAD, RGB_VAD, KC_TRNS,  KC_TRNS,  RGB_TOG,                         BL_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, RGB_TOG,_______,        _______, BL_TOGG, RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
   ),
 
   /* Adjust
