@@ -46,44 +46,44 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Lower
    * ,----------------------------------------------------------------------------------------------------------------------.
-   * |      |Static|Breath|Rainbw| Swirl| Snake|  {   |                    |  }   |      |      |      |      |      |      |
+   * | F11  |  F1  |  F2  |  F3  |  F4  |  F5  |  {   |                    |  }   |  F6  |  F7  |  F8  |  F9  | F10  | F12  |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * |      |Knight| X'mas| Grdnt| Test |      |Forwrd|                    |BL_INC| Home | PgDn | PgUp | End  |      |      |
+   * |      |Static|Breath|Rainbw| Swirl| Snake|Forwrd|                    |BL_INC|      |      |      |      |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * | Caps | Hue+ | SAT+ | VAL+ |      |      |Revers|                    |BL_DEC|  ←   |   ↓  |  ↑   |   →  |      |      |
+   * |      | Hue+ | SAT+ | VAL+ |      |      |Revers|                    |BL_DEC|  ←   |   ↓  |  ↑   |   →  |      |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
    * |      | Hue- | SAT- | VAL- |      |      |Toggle|                    |BL_TOG|      |      |      |      |      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |||||||| Lower|Toggle|      ||||||||      |BL_TOG| Raise|||||||| HOME | PaDn | PgUp | END  |
+   * | Caps |      |      |      |||||||| Lower|Toggle|      ||||||||      |BL_TOG| Raise|||||||| HOME | PaDn | PgUp | END  |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_LOWER] = LAYOUT(
-    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, KC_LCBR,                         KC_RCBR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, RGB_M_K, RGB_M_X, RGB_M_G, RGB_M_T,  KC_TRNS,  RGB_MOD,                         BL_INC,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_TRNS, KC_TRNS, \
-    KC_CAPS, RGB_HUI, RGB_SAI, RGB_VAI, KC_TRNS,  KC_TRNS,  RGB_RMOD,                        BL_DEC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, \
+    KC_F11,  KC_F1,   KC_F2,   KC_F3,   KC_F4,    KC_F5,    KC_LCBR,                         KC_RCBR, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F12,  \
+    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_MOD,                         BL_INC, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+    KC_TRNS, RGB_HUI, RGB_SAI, RGB_VAI, KC_TRNS,  KC_TRNS,  RGB_RMOD,                        BL_DEC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, \
     KC_TRNS, RGB_HUD, RGB_SAD, RGB_VAD, KC_TRNS,  KC_TRNS,  RGB_TOG,                         BL_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, RGB_TOG,_______,        _______, BL_TOGG, RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
+    KC_CAPS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, RGB_TOG,_______,        _______, BL_TOGG, RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
   ),
 
   /* Raise
    * ,----------------------------------------------------------------------------------------------------------------------.
-   * |      |Static|Breath|Rainbw| Swirl| Snake|  {   |                    |  }   |      |      |      |      |      |      |
+   * | F11  |  F1  |  F2  |  F3  |  F4  |  F5  |  {   |                    |  }   |  F6  |  F7  |  F8  |  F9  | F10  | F12  |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
    * |      |Knight| X'mas| Grdnt| Test |      |Forwrd|                    |BL_INC| Home | PgDn | PgUp | End  |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * | Caps | Hue+ | SAT+ | VAL+ |      |      |Revers|                    |BL_DEC|  ←   |   ↓  |  ↑   |   →  |      |      |
+   * |      | Hue+ | SAT+ | VAL+ |      |      |Revers|                    |BL_DEC|  ←   |   ↓  |  ↑   |   →  |      |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
    * |      | Hue- | SAT- | VAL- |      |      |Toggle|                    |BL_TOG|      |      |      |      |      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |||||||| Lower|Toggle|      ||||||||      |BL_TOG| Raise|||||||| HOME | PaDn | PgUp | END  |
+   * | Caps |      |      |      |||||||| Lower|Toggle|      ||||||||      |BL_TOG| Raise|||||||| HOME | PaDn | PgUp | END  |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_RAISE] = LAYOUT(
-    KC_TRNS, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, KC_LCBR,                         KC_RCBR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+    KC_F11,  KC_F1,   KC_F2,   KC_F3,   KC_F4,    KC_F5,    KC_LCBR,                         KC_RCBR, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F12,  \
     KC_TRNS, RGB_M_K, RGB_M_X, RGB_M_G, RGB_M_T,  KC_TRNS,  RGB_MOD,                         BL_INC,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_TRNS, KC_TRNS, \
-    KC_CAPS, RGB_HUI, RGB_SAI, RGB_VAI, KC_TRNS,  KC_TRNS,  RGB_RMOD,                        BL_DEC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, \
+    KC_TRNS, RGB_HUI, RGB_SAI, RGB_VAI, KC_TRNS,  KC_TRNS,  RGB_RMOD,                        BL_DEC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, \
     KC_TRNS, RGB_HUD, RGB_SAD, RGB_VAD, KC_TRNS,  KC_TRNS,  RGB_TOG,                         BL_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, RGB_TOG,_______,        _______, BL_TOGG, RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
+    KC_CAPS, KC_TRNS, KC_TRNS, KC_TRNS,              LOWER, RGB_TOG,_______,        _______, BL_TOGG, RAISE,            KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
   ),
 
   /* Adjust
