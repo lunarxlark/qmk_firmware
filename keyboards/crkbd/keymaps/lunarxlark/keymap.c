@@ -72,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------------------.                   ,-----------------------------------------------------.
-          TAB,       1,       2,       3,       4,       5,                           6,       7,       8,       9,       0,    BSPC,\
+         TILD,      F1,      F2,      F3,      F4,      F5,                          F6,      F7,      F8,      F9,     F10,    CAPS,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
-        CTLTB,      F1,      F2,      F3,      F4,      F5,                          F6,      F7,      F8,      F9,     F10,   XXXXX,\
+        CTLTB,    EXLM,      AT,    HASH,     DLR,    PERC,                        CIRC,    AMPR,    ASTR,    LPRN,    RPRN,    PIPE,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
-         LSFT,     F11,     F12,     F13,     F14,     F15,                         F16,     F17,     F18,     F19,     F20,   XXXXX,\
+         LSFT,       1,       2,       3,       4,       5,                           6,       7,       8,       9,       0,    RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------| |--------|--------+--------+--------+--------+--------+--------|
                                             GUIEI,    LOWER,    ESC,       ENT,   RAISE,   ALTKN \
                                       //`--------------------------' `--------------------------'
@@ -84,11 +84,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------------------.                   ,-----------------------------------------------------.
-          TAB,    EXLM  ,    AT,    HASH,     DLR,    PERC,                        CIRC,    AMPR,    ASTR,    LPRN,    RPRN,    BSPC,\
+          TAB,   XXXXX,   XXXXX,   XXXXX,    MINS,    LBRC,                        RBRC,     EQL,   XXXXX,   XXXXX,   XXXXX,   XXXXX,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
-        CTLTB,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                        LEFT,    DOWN,      UP,   RIGHT,    PIPE,     GRV,\
+        CTLTB,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                        LEFT,    DOWN,      UP,   RIGHT,   XXXXX,   XXXXX,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
-         LSFT,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                       XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,\
+         LSFT,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                        HOME,  PGDOWN,    PGUP,     END,   XXXXX,   XXXXX,\
   //|--------+--------+--------+--------+--------+--------+--------| |--------|--------+--------+--------+--------+--------+--------|
                                             GUIEI,   LOWER,     ESC,       ENT,   RAISE,   ALTKN \
                                       //`--------------------------' `--------------------------'
