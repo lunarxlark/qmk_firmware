@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                   ,-----------------------------------------------------.
           GRV,      F1,      F2,      F3,      F4,      F5,                          F6,      F7,      F8,      F9,     F10,    CAPS,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
-        CTLTB,    EXLM,      AT,    HASH,     DLR,    PERC,                        CIRC,    AMPR,    ASTR,    LPRN,    RPRN,    PIPE,\
+        CTLTB,    EXLM,      AT,    HASH,     DLR,    PERC,                        CIRC,    AMPR,    ASTR,    LPRN,    RPRN,  BSLASH,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
          LSFT,       1,       2,       3,       4,       5,                           6,       7,       8,       9,       0,    RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------| |--------|--------+--------+--------+--------+--------+--------|
@@ -84,9 +84,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------------------.                   ,-----------------------------------------------------.
-          TAB,   XXXXX,   XXXXX,   XXXXX,    MINS,    LBRC,                        RBRC,     EQL,   XXXXX,   XXXXX,   XXXXX,   XXXXX,\
+          TAB,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                       XXXXX,   XXXXX,   XXXXX,   XXXXX,    LBRC,    RBRC,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
-        CTLTB,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                        LEFT,    DOWN,      UP,   RIGHT,   XXXXX,   XXXXX,\
+        CTLTB,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                        LEFT,    DOWN,      UP,   RIGHT,    MINS,     EQL,\
   //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
          LSFT,   XXXXX,   XXXXX,   XXXXX,   XXXXX,   XXXXX,                        HOME,  PGDOWN,    PGUP,     END,   XXXXX,   XXXXX,\
   //|--------+--------+--------+--------+--------+--------+--------| |--------|--------+--------+--------+--------+--------+--------|
